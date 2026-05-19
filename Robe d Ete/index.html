@@ -370,7 +370,10 @@ footer{text-align:center;padding:36px 20px;border-top:1px solid rgba(201,168,76,
   <div class="product-sub">"خفيفة، مريحة، وتخطف الأنظار"</div>
 </section>
 
-<img src="bleu.jpeg" style="width:100%;display:block;object-fit:cover;">
+<div style="display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;">
+  <img src="bleu.jpeg" style="min-width:100%;scroll-snap-align:start;object-fit:cover;">
+  <img src="rose.jpeg" style="min-width:100%;scroll-snap-align:start;object-fit:cover;">
+</div>
 
 </div>
   <div class="c-dots">
@@ -444,10 +447,10 @@ footer{text-align:center;padding:36px 20px;border-top:1px solid rgba(201,168,76,
             <img src="bleu.jpeg" alt="Bleu">
             <span class="color-name">Bleu 💙</span>
           </label>
-          <label class="color-opt" onclick="selColor(this,'Blanc')">
-            <input type="radio" name="color" value="Blanc">
-            <img src="rose.jpeg" alt="Blanc">
-            <span class="color-name">Blanc 🤍</span>
+          <label class="color-opt" onclick="selColor(this,'Rose')">
+            <input type="radio" name="color" value="Rose">
+            <img src="rose.jpeg" alt="Rose">
+            <span class="color-name">Rose 🌹</span>
           </label>
         </div>
         <div class="err-msg" id="colorErr">⚠️ الرجاء اختيار اللون</div>
@@ -488,7 +491,7 @@ footer{text-align:center;padding:36px 20px;border-top:1px solid rgba(201,168,76,
         </div>
         <div class="sum-row">
           <span class="sum-lbl">سعر المنتج</span>
-          <span class="sum-val">3,900 دج</span>
+          <span class="sum-val">3,500 دج</span>
         </div>
         <div class="sum-row">
           <span class="sum-lbl">التوصيل</span>
@@ -577,7 +580,7 @@ footer{text-align:center;padding:36px 20px;border-top:1px solid rgba(201,168,76,
   var TELEGRAM_CHAT  = '1196700823';
   var SHEET_URL      = 'https://script.google.com/macros/s/AKfycbz0e9af4sKGeC5OFkRH1dsoIJIM4PvalM9W9MQZe65F3lj3v2IbG2QQvAcVdY5DhuRR/exec';
   var PRODUCT_NAME   = 'Robe d Ete 🌸';
-  var PRODUCT_PRICE  = 3900;
+  var PRODUCT_PRICE  = 3500;
   var DELIVERY_COST  = 600;
 
   // ===== TICKER =====
