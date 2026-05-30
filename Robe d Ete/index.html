@@ -13,15 +13,8 @@ n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
 n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init','2233363570524761');
-fbq('init','904615882530722');
-fbq('init','898109719781944');
-fbq('track','PageView');
-fbq('track','Purchase', {
-  content_name: 'Robe d Ete 🌸',
-  content_type: 'product',
-  value: 3500,
-  currency: 'DZD'
+fbq('init', '2233363570524761');
+fbq('track', 'PageView');
 </script>
 
 <!-- TikTok Pixel -->
@@ -734,9 +727,10 @@ footer{text-align:center;padding:36px 20px;border-top:1px solid rgba(201,168,76,
 
     // Meta Pixel
     if (typeof fbq !== 'undefined') {
-      fbq('track', 'Purchase', { value: PRODUCT_PRICE, currency: 'DZD' });
-    }
-
+    fbq('track', 'Purchase', {
+  value: 3500,
+  currency: 'DZD'
+});
     // TikTok Pixel
     if (typeof ttq !== 'undefined') {
       ttq.track('CompletePayment', { value: PRODUCT_PRICE, currency: 'DZD' });
